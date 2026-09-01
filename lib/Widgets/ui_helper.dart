@@ -6,15 +6,20 @@ class UiHelper {
     required String buttonname,
   }) {
     return SizedBox(
-      height: 35,
-      width: 300,
+      height: 45,
+      width: 350,
       child: ElevatedButton(
         onPressed: () {
           callback();
         },
+        style: ElevatedButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(40),
+          ),
+        ),
         child: Text(
           buttonname,
-          style: TextStyle(fontSize: 40, color: Colors.white),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
       ),
     );
