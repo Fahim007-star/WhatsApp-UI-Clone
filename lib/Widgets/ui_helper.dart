@@ -30,6 +30,7 @@ class UiHelper {
     required double height,
     Color? color,
     FontWeight? fontWeight,
+    required String fontFamily,
   }) {
     return Text(
       text,
@@ -37,6 +38,7 @@ class UiHelper {
         fontSize: height,
         color: color ?? Color(0XFF5E5E5E),
         fontWeight: fontWeight,
+        fontFamily: fontFamily,
       ),
     );
   }

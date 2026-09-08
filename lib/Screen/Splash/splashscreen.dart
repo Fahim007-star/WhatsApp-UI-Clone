@@ -36,6 +36,7 @@ class _SplashscreenState extends State<Splashscreen> {
               text: "WhatsApp",
               height: 18,
               fontWeight: FontWeight.bold,
+              fontFamily: 'regular',
             ),
           ],
         ),
