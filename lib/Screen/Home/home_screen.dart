@@ -28,15 +28,14 @@ class HomeScreen extends StatelessWidget {
             height: 20,
             fontFamily: "",
             color: Colors.white,
+            fontWeight: FontWeight.bold,
           ),
           actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 20),
-              child: IconButton(
-                onPressed: () {},
-                icon: Image.asset("assets/images/Search.png"),
-              ),
+            IconButton(
+              onPressed: () {},
+              icon: Image.asset("assets/images/Search.png"),
             ),
+            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert_sharp)),
           ],
         ),
         body: TabBarView(
